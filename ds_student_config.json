@@ -1,0 +1,13 @@
+{
+    "zero_optimization": {
+      "stage": 2,
+      "contiguous_gradients": true,
+      "overlap_comm": true,
+      "reduce_bucket_size": 2e8
+    },
+    "fp16": {
+      "enabled": true
+    },
+    "train_batch_size": 16,
+    "gradient_accumulation_steps": 2
+  }

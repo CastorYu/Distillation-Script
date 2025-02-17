@@ -1,0 +1,17 @@
+{
+    "zero_optimization": {
+      "stage": 3,
+      "offload_param": {
+        "device": "cpu",
+        "pin_memory": true
+      },
+      "stage3_max_live_parameters": 1e9,
+      "stage3_prefetch_bucket_size": 5e8
+    },
+    "fp16": {
+      "enabled": true,
+      "loss_scale_window": 1000
+    },
+    "train_batch_size": 1,
+    "steps_per_print": 100
+  }
