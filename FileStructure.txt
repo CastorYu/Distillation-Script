@@ -1,0 +1,16 @@
+File Structure
+
+distillation/
+├── configs/
+│   ├── ds_teacher_config.json    # ZeRO-3 config for teacher
+│   └── ds_student_config.json    # ZeRO-2 config for student
+├── scripts/
+│   ├── precompute_teacher.py     # Teacher output caching
+│   └── train_distill.py          # Main training script
+├── models/
+│   ├── teacher/                  # 7B teacher model files
+│   └── student/                  # Student model files
+├── data/
+│   └── dataset/                  # Parquet dataset files
+├── outputs/                      # Cached outputs & final model
+└── requirements.txt
